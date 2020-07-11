@@ -6,9 +6,9 @@ metadata:
     name: postgres-pod
     app: demo-voting-app
 
-spec:
+spec: 
   containers:
   - name: postgres
-    image: postgres:9.4
+    image: postgres:10.4
     ports:
     - containerPort: 5432
