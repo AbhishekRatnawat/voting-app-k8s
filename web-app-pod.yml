@@ -1,0 +1,14 @@
+apiVersion: v1
+kind: Pod
+metadata:
+  name: web-app-pod
+  labels:
+    name: web-app-pod
+    app: web-app-pod
+
+spec:
+  containers:
+  - name: flask-web-app
+    image: abhidoc08/my-web-app
+    ports:
+    - containerPort: 5000
