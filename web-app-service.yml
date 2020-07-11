@@ -1,0 +1,17 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: web-app-service
+  labels:
+    name: web-app-service
+    app: flask-web-app
+
+spec:
+  type: LoadBalancer
+  ports:
+  - port: 5000
+    targetPort: 5000
+
+  selector:
+    name: web-app-pod
+    app: flask-web-app

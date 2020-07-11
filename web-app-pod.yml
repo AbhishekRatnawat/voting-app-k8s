@@ -4,7 +4,7 @@ metadata:
   name: web-app-pod
   labels:
     name: web-app-pod
-    app: web-app-pod
+    app: flask-web-app
 
 spec:
   containers:
